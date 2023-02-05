@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSI model</title>
+    <link rel="Stylesheet"  href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+        
+    
+        <div class="menu">
+          <center>
+            <ul class="menuinner">
+                <li class="items"><a href="../index.html">Home</a></li>
+                <li class="items"><a href="/html/about.html">About</a></li>
+                <li class="items"><a href="../index.html#contact">Contact</a></li>
+                <li class="items"><a href="/html/notes.html">Notes</a></li>
+                <li class="items"><a href="/html/video.html">Video</a></li>
+                <li class="items"><a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="color:white;">Topics</a></li>
+                <div class="offcanvas offcanvas-end" style="background-color: #2f4b9b;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel" style="color:white;">Topics</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="color:white;"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="canva">
+                      <li class="top"><a href="/html/intro.html">Introduction</a></li>
+                      <li class="top"><a href="/html/types of cn.html">Types of CN</a></li>
+                      <li class="top"><a href="/html/OSI.html">OSI Model</a></li>
+                      <li class="top"><a href="/html/Cryptography.html">Cryptography</a></li>
+                      <li class="top"> <a href="/html/lynux command.html">Linux command</a></li>
+                      <li class="top"><a href="/html/ques.html">Question Bank</a></li>
+                    </ul>
+                  </div>
+                </div>
+                                 
+            </ul>
+          </center>      
+        </div>
+        <center>
+            <h1 class="heading" style="margin-top:40px;">OSI Model (Open System Interconnection)</h1><br><br>            
+            <p class="para" style="color:#2f4b9b"> OSI model is the conceptual model of how a message is sent from one system to another in a network.</p>
+            <div class="layers">
+                <div><a href="#application" style="color:white; text-decoration:none; font-size:20px;">Application Layer</a></div>
+                <img src="/images/arrow.svg" width="100" height="30">
+                
+                <div><a href="#presentation" style="color:white; text-decoration:none; font-size:20px;">Presentation Layer</a></div>
+                <img src="/images/arrow.svg" width="100" height="30">
+
+                <div><a href="#session" style="color:white; text-decoration:none; font-size:20px;">Session Layer</a></div>
+                <img src="/images/arrow.svg" width="100" height="30">
+
+                <div><a href="#transport" style="color:white; text-decoration:none; font-size:20px;">Transport Layer</a></div>
+                <img src="/images/arrow.svg" width="100" height="30">
+
+                <div><a href="#network" style="color:white; text-decoration:none; font-size:20px;">Network Layer</a></div>
+                <img src="/images/arrow.svg" width="100" height="30">
+
+                <div><a href="#datalink" style="color:white; text-decoration:none; font-size:20px;">Datalink Layer</a></div>
+                <img src="/images/arrow.svg" width="100" height="30">
+
+                <div><a href="#physical" style="color:white; text-decoration:none; font-size:20px;">Physical Layer</a></div>
+                  
+            </div>
+            <a id="physical"></a>
+            <a href="/notes/DocScanner 7 Jan 2023 9-40 pm.pdf" class="but" style=" width:60%; margin-top: 30px;" download="" >Download Physical Layers Full Notes</a>
+            <h1 class="heading" style="margin-top:40px; text-align: left; margin-left: 20px ; width:60%">1- Physical Layer
+            </h1>
+            <p class="para" style="text-align:left; margin-left: 20px ; width:60%">Physical Layer is the bottom-most layer in the Open System Interconnection (OSI) Model which is a physical and electrical representation of the system. It consists of various network components such as power plugs, connectors, receivers, cable types, etc. Physical Layer sends data bits from one device(s) (like a computer) to another device(s). Physical Layer defines the types of encoding (that is how the 0’s and 1’s are encoded in a signal). Physical Layer is responsible for the communication of the unstructured raw data streams over a physical medium.<br>
+
+                <br><b>Functions Performed by Physical Layer :</b><br>
+                Following are some important and basic functions that are performed by the Physical Layer of the OSI Model –<br>
+                
+                1- Physical Layer maintains the data rate (how many bits a sender can send per second).<br>
+                2- It performs Synchronization of bits.<br>
+                3- It helps in Transmission Medium decision (direction of data transfer).<br>
+                4- It helps in Physical Topology (Mesh, Star, Bus, Ring) decision (Topology through which we can connect the devices with each other).
+                5- It helps in providing Physical Medium and Interface decisions.<br>
+                6- It provides two types of configuration Point to Point configuration and Multi-Point configuration.<br>
+                7- It provides an interface between devices (like PC’s or computers) and transmission medium.<br>
+                8- It has a protocol data unit in bits.<br>
+                9- Hubs, Ethernet, etc. device is used in this layer.<br>
+                10- This layer comes under the category of Hardware Layers (since the hardware layer is responsible for all the physical connection establishment and processing too).<br>
+                11- It provides an important aspect called Modulation, which is the process of converting the data into radio waves by adding the information to an electrical or optical nerve signal.<br>
+                12- It also provides Switching mechanism wherein data packets can be forward from one port (sender port) to the leading destination port.<br>
+                <br><br><b>Physical Topologies :</b><br>
+                Physical Topology or Network Topology is the Geographical Representation of Linking devices. Following are the four types of physical topology-
+                Mesh Topology: In a mesh topology, each and every device should have a dedicated point-to-point connection with each and every other device in the network. Here there is more security of data because there is a dedicated point-to-point connection between two devices. Mesh Topology is difficult to install because it is more complex.
+                <br>1- Star Topology: In star topology, the device should have a dedicated point-to-point connection with a central controller or hub. Star Topology is easy to install and reconnect as compared to Mesh Topology. Star Topology doesn’t have Fault Tolerance Technique.
+                <br>2- Bus Topology: In a bus topology, multiple devices are connected through a single cable that is known as backbone cable with the help of tap and drop lines. It is less costly as compared to Mesh Topology and Star Topology. Re-connection and Re-installation are difficult.
+                <br>3- Ring Topology: In a ring topology, each device is connected with repeaters in a circle-like ring that’s why it is called Ring Topology. In Ring topology, a device can send the data only when it has a token, without a token no device can send the data, and a token is placed by Monitor in Ring Topology.
+                <br>4- Point to Point configuration : In Point-to-Point configuration, there is a line (link) that is fully dedicated to carrying the data between two devices.
+                
+                <br>5- Multi-Point configuration : In Multi-Point configuration, there is a line (link) through which multiple devices are connected.
+                
+                <br><br><b>Modes of Transmission Medium :</b>
+                
+                <br>1- Simplex mode: In this mode, out of two devices, only one device can transmit the data, the other device can only receive the data. Example- Input from keyboards, monitors, TV broadcasting, Radio broadcasting, etc.
+                <br>2- Half Duplex mode: In this mode, out of two devices, both devices can send and receive the data but only one at a time not simultaneously. Example- Walkie-Talkie, Railway Track, etc.
+                <br>3- Full-Duplex mode: In this mode, both devices can send and receive the data simultaneously. Example- Telephone System, Chatting applications, etc.
+                </p>
+
+                <a id="datalink"></a>
+            <a href="/notes/DocScanner 7 Jan 2023 9-45 pm.pdf" class="but" style=" width:60%; margin-top: 30px;" download="" >Download Datalink Layers Full Notes</a>
+
+            <h1 class="heading" style="margin-top:40px; text-align: left; margin-left: 20px ; width:60%">2- Datalink Layer
+            </h1>
+            <p class="para" style="text-align:left; margin-left: 20px ; width:60%">The data link layer is responsible for the node-to-node delivery of the message. The main function of this layer is to make sure data transfer is error-free from one node to another, over the physical layer. When a packet arrives in a network, it is the responsibility of DLL to transmit it to the Host using its MAC address. <br>
+            <br><b>Data Link Layer is divided into two sublayers:</b><br>
+             1- Local Link Control<br>
+             2- Media Access Control<br><br>The packet received from the Network layer is further divided into frames depending on the frame size of NIC(Network Interface Card). DLL also encapsulates Sender and Receiver’s MAC address in the header. 
+
+             The Receiver’s MAC address is obtained by placing an ARP(Address Resolution Protocol) request onto the wire asking “Who has that IP address?” and the destination host will reply with its MAC address.  <br><br>
+            <br><b>The functions of the Data Link layer are :  </b>
+             1- Framing: Framing is a function of the data link layer. It provides a way for a sender to transmit a set of bits that are meaningful to the receiver. This can be accomplished by attaching special bit patterns to the beginning and end of the frame.<br>
+            2- Physical addressing: After creating frames, the Data link layer adds physical addresses (MAC address) of the sender and/or receiver in the header of each frame.<br>
+        3- Error control: Data link layer provides the mechanism of error control in which it detects and retransmits damaged or lost frames.<br>
+    4- Flow Control: The data rate must be constant on both sides else the data may get corrupted thus, flow control coordinates the amount of data that can be sent before receiving acknowledgement.<br>
+5- Access control: When a single communication channel is shared by multiple devices, the MAC sub-layer of the data link layer helps to determine which device has control over the channel at a given time.<br><br></p>
+
+            <a id="network"></a>
+            <a href="/notes/DocScanner 7 Jan 2023 9-54 pm.pdf" class="but" style=" width:60%; margin-top: 30px;" download="" >Download Network Layers Full Notes</a>
+            
+            <h1 class="heading" style="margin-top:40px; text-align: left; margin-left: 20px ; width:60%">3- Network Layer
+            </h1>
+            <p class="para" style="text-align:left; margin-left: 20px ; width:60%">The network layer works for the transmission of data from one host to the other located in different networks. It also takes care of packet routing i.e. selection of the shortest path to transmit the packet, from the number of routes available. The sender & receiver’s IP addresses are placed in the header by the network layer. <br>
+            <br>
+            <br><b>The functions of the Network layer are :</b>  <br>
+            1- Routing: The network layer protocols determine which route is suitable from source to destination. This function of the network layer is known as routing.<br>
+            2- Logical Addressing: In order to identify each device on internetwork uniquely, the network layer defines an addressing scheme. The sender & receiver’s IP addresses are placed in the header by the network layer. Such an address distinguishes each device uniquely and universally.<br><br></p>
+
+                <div id="transport"></div>
+            <a href="/notes/DocScanner 7 Jan 2023 10-06 pm.pdf" class="but" style=" width:60%; margin-top: 30px;" download="" >Download Transport Layers Full Notes</a>
+
+            <h1 class="heading" style="margin-top:40px; text-align: left; margin-left: 20px ; width:60%">4- Transport Layer
+                </h1>
+            <p class="para" style="text-align:left; margin-left: 20px ; width:60%">The transport layer provides services to the application layer and takes services from the network layer. The data in the transport layer is referred to as Segments. It is responsible for the End to End Delivery of the complete message. The transport layer also provides the acknowledgement of the successful data transmission and re-transmits the data if an error is found.<br><br>
+                At sender’s side: Transport layer receives the formatted data from the upper layers, performs Segmentation, and also implements Flow & Error control to ensure proper data transmission. It also adds Source and Destination port numbers in its header and forwards the segmented data to the Network Layer. <br><br>
+                Generally, this destination port number is configured, either by default or manually. For example, when a web application makes a request to a web server, it typically uses port number 80, because this is the default port assigned to web applications. Many applications have default ports assigned. 
+
+<br>At receiver’s side: Transport Layer reads the port number from its header and forwards the Data which it has received to the respective application. It also performs sequencing and reassembling of the segmented data. <br>
+<br><b>The functions of the transport layer are as follows:</b><br>
+1- Segmentation and Reassembly: This layer accepts the message from the (session) layer, and breaks the message into smaller units. Each of the segments produced has a header associated with it. The transport layer at the destination station reassembles the message.<br>
+2- Service Point Addressing: In order to deliver the message to the correct process, the transport layer header includes a type of address called service point address or port address. Thus by specifying this address, the transport layer makes sure that the message is delivered to the correct process.<br>
+<br><br>
+The services provided by the transport layer :  <br>
+A. Connection-Oriented Service: It is a three-phase process that includes<br> 
+
+– 1- Connection Establishment<br> 
+– 2- Data Transfer <br>
+– 3- Termination / disconnection<br> 
+<br>
+In this type of transmission, the receiving device sends an acknowledgement, back to the source after a packet or group of packets is received. This type of transmission is reliable and secure
+<br>
+B. Connectionless service: It is a one-phase process and includes Data Transfer. In this type of transmission, the receiver does not acknowledge receipt of a packet. This approach allows for much faster communication between devices. Connection-oriented service is more reliable than connectionless Service.<br>
+
+
+</p>
+
+                <div id="session"></div>
+            <a href="/notes/DocScanner 7 Jan 2023 10-10 pm.pdf" class="but" style=" width:60%; margin-top: 30px;" download="" >Download Session Layers Full Notes</a>
+
+            <h1 class="heading" style="margin-top:40px; text-align: left; margin-left: 20px ; width:60%">5- Session Layer </h1>
+            <p class="para" style="text-align:left; margin-left: 20px ; width:60%">This layer is responsible for the establishment of connection, maintenance of sessions, authentication, and also ensures security. <br>
+            <br><b>The functions of the session layer are :  </b><br>
+             1- Session establishment, maintenance, and termination: The layer allows the two processes to establish, use and terminate a connection.<br>
+            2- Synchronization: This layer allows a process to add checkpoints which are considered synchronization points into the data. These synchronization points help to identify the error so that the data is re-synchronized properly, and ends of the messages are not cut prematurely and data loss is avoided.<br>
+            3- Dialog Controller: The session layer allows two systems to start communication with each other in half-duplex or full-duplex.<br>
+            </p>
+
+                <div id="presentation"></div>
+            <a href="/notes/DocScanner 7 Jan 2023 10-12 pm.pdf" class="but" style=" width:60%; margin-top: 30px;" download="" >Download Presentation Layers Full Notes</a>
+
+                <h1 class="heading" style="margin-top:40px; text-align: left; margin-left: 20px ; width:60%">6- Presentation  Layer </h1>
+                <p class="para" style="text-align:left; margin-left: 20px ; width:60%">The presentation layer is also called the Translation layer. The data from the application layer is extracted here and manipulated as per the required format to transmit over the network. 
+                    <br><br><b>The functions of the presentation layer are : </b><br>
+                    1- Translation: For example, ASCII to EBCDIC.<br>
+                    2- Encryption/ Decryption: Data encryption translates the data into another form or code. The encrypted data is known as the ciphertext and the decrypted data is known as plain text. A key value is used for encrypting as well as decrypting data.<br>
+                    3- Compression: Reduces the number of bits that need to be transmitted on the network.<br>
+                </p>
+
+                    <div id="application"></div>
+            <a href="/notes/DocScanner 7 Jan 2023 10-15 pm.pdf" class="but" style=" width:60%; margin-top: 30px;" download="" >Download Application Layers Full Notes</a>
+
+                    <h1 class="heading" style="margin-top:40px; text-align: left; margin-left: 20px ; width:60%">7- Application Layer </h1>
+                    <p class="para" style="text-align:left; margin-left: 20px ; width:60%">At the very top of the OSI Reference Model stack of layers, we find the Application layer which is implemented by the network applications. These applications produce the data, which has to be transferred over the network. This layer also serves as a window for the application services to access the network and for displaying the received information to the user. 
+
+                        Example: Application – Browsers, Skype Messenger, etc.<br>
+                        <br><b>The functions of the Application layer are :  </b><br>
+                        1- Network Virtual Terminal<br>
+2- FTAM-File transfer access and management<br>
+3- Mail Services<br>
+4- Directory Services<br>  
+                    </p>            
+
+        </center>
+
+
+
+        <div class="footer">
+            All rights are reserved by kratikanigam172001@gmail.com 
+        </div>
+
+    
+</body>
+</html>>
